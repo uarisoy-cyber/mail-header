@@ -2,7 +2,7 @@ import argparse
 from tabulate import tabulate
 from colorama import Fore, Style
 
-print("\header-head")
+print("header-head")
 
 
 def parse_header(header_file):
@@ -79,7 +79,6 @@ def display_header_info(header_data):
     return output
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='WhatMail')
     parser.add_argument('-hf', '--header_file', type=str, help='Path to the email header file')
     parser.add_argument('-O', '--output_file', type=str, help='Path to the output file')
     args = parser.parse_args()
